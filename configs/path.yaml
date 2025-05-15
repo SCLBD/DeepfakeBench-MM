@@ -1,0 +1,7 @@
+log_dir: ./logs/
+original_dir: /workspace/public_data/deepfake_datasets/original
+transcode_dir: /workspace/public_data/deepfake_datasets/transcoded
+preprocess_dir: /workspace/public_data/deepfake_datasets/preprocessed
+json_dir: /workspace/public_data/deepfake_datasets/json
+temp_dir: /workspace/public_data/deepfake_datasets/temp
+# temp_dir: ./temp/

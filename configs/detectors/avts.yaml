@@ -1,0 +1,50 @@
+# model settings
+model_name: AVTS-stage2
+loss_func: [cross_entropy]
+
+# dataset selection
+train_dataset: [FakeAVCeleb]
+train_batch_size: 32
+val_dataset: [FakeAVCeleb]
+val_batch_size: 32
+test_dataset: [FakeAVCeleb, IDForge, LAV-DF, AVDeepfake1M, Mega-MMDF]
+test_batch_size: 64
+
+# dataset settings
+audio_conversion: MFCC              # audio conversion type
+mean: [0.485, 0.456, 0.406]
+std: [0.229, 0.224, 0.225]
+video_resolution: 224               # input frame size
+augmentations:
+  flip:
+    type: horizontal                # leave it empty to use default value: horizontal
+    prob: 0.5                       # leave it empty to use default value: 0.5
+  rotate:
+    rotate_limit: [-10, 10]         # leave it empty to use default value: [-10, 10]
+    prob: 0.5                       # leave it empty to use default value: 0.5
+  gaussian_blur:
+    blur_limit: [3, 7]              # leave it empty to use default value: [3, 7]
+    blur_prob: 0.5                  # leave it empty to use default value: 0.5
+  color:
+    brightness_limit: [-0.1, 0.1]   # leave it empty to use default value: [-0.1, 0.1]
+    contrast_limit: [-0.1, 0.1]     # leave it empty to use default value: [-0.1, 0.1]
+    prob: 0.5                       # leave it empty to use default value: 0.5
+  quality:
+    quality_lower: 40               # leave it empty to use default value: 40
+    quality_upper: 100              # leave it empty to use default value: 100
+
+# train settings
+num_epochs: 10
+optimizer:
+  type: adam
+  params:
+    lr: 0.0004
+metric_scoring: auc
+
+# other settings
+seed: 1024
+cuda: true
+cudnn: true
+
+
+

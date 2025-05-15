@@ -1,0 +1,10 @@
+transcode: false          # set true to transcode video clip into frames.npz format, otherwise, into frames.mp4 format
+num_proc: 128             # the number of processors to be used, leave it empty to use all preprocessors.
+
+# video and audio output settings
+length: 1.0               # clip length (s)
+FPS: 25                   # video FPS
+sample_rate: 16000        # audio sample rate
+clip_amount: 1            # the number of clips cropped and segmented from a video
+
+
