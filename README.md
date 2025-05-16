@@ -84,6 +84,11 @@ To evaluate a trained model on both in-domain and cross-domain datasets:
 python test.py --detector_path configs/detectors/${YourModel}.yaml --weights_path ${YourWeight}.yaml
 ```
 
+## Reference
+
+For unimodal benchmark, refer to our <a href="https://github.com/SCLBD/DeepfakeBench">DeepfakeBench </a> for further information. To provide more convenient codebase for both unimodal and multimodal Deepfake benchmark, we plan to merge these two benchmark in the future. Thanks for your interest.
+
+
 
 ## 🛡️ License
 
