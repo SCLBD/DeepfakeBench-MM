@@ -1,0 +1,26 @@
+# Test only; copy of the vanilla Mega-MMDF model and preprocessing settings.
+# Real-only, within-clip audio window rotation. shift: 0 gives aligned baseline.
+model_name: AVH
+model_config:
+  pretrained: pretrained/avhubert/self_large_vox_433h.pt
+  losses:
+  - name: CE
+    func: cross_entropy
+    params:
+      real_num: 59644
+      fake_num: 703936
+data_config:
+  frame_size: 256
+  color_mode: Gray
+  frame_mean: 0.421
+  frame_std: 0.165
+  num_frames: 25
+  stride: 1
+  spectrogram_type: Log-Mel
+  spectrogram_backend: python_speech_features
+  misalignment:
+    modality: audio
+    shift: 1
+num_workers: 8
+val_batch_size: 64
+data_type: audio_video_misaligned_real

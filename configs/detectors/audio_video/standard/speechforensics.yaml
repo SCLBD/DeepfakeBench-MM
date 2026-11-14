@@ -1,0 +1,31 @@
+# Model Settings
+model_name: SpeechForensics
+model_config:
+  # Stage-2 test-only configuration. test.py restores the official AV-HuBERT
+  # model and its saved architecture/task config directly from --weight_path.
+  offset_window: 15
+  # Official preprocessing: landmark-centred 96x96 mouth ROI, followed by an
+  # 88x88 centre crop before the visual frontend.
+  mouth_crop_size: 96
+  image_crop_size: 88
+
+# Data Settings
+data_type: audio_video
+data_config:
+  frame_size: 256
+  color_mode: Gray
+  frame_mean: 0.421
+  frame_std: 0.165
+  with_landmark: true
+  # ±15 is an offset search range with zero padding, not a 31-frame minimum.
+  # Keep 25 frames so every benchmark test video remains eligible; the current
+  # fixed-length Dataset cannot reproduce official whole-video inference.
+  num_frames: 25
+  stride: 1
+  spectrogram_type: Log-Mel
+  spectrogram_backend: python_speech_features
+num_workers: 8
+
+# Test-time helper; ``test.py`` falls back to this when ``--test_batch_size`` is
+# not provided.
+val_batch_size: 32

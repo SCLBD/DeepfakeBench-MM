@@ -1,0 +1,70 @@
+{
+  "dataset": "PolyGlotFake",
+  "version": 1,
+  "path_base": "original_dir",
+  "split_files_sha256": {
+    "train.json": "ff03bf248e7074eb4b2dc7dc13673ee1a47bddb2804df9ca20e640b3d1ccd38a",
+    "val.json": "373b0b41fad5d0976ab422b4d1680ab4c5781db7ce5e55ea64af9835eb17b80f",
+    "test.json": "f828ab380c5f1df43a3383d19ee697fa936cbd0e225f119964f54fa9fba2ee74"
+  },
+  "rule": "Real clips were shuffled once with random.Random(42) in the original annotation order: floor(0.8*N) train, floor(0.1*N) val, remainder test. Each fake follows its raw_video_name real source. Exact duplicate records were removed.",
+  "raw_counts": {
+    "train": 12098,
+    "val": 1534,
+    "test": 1604
+  },
+  "raw_class_counts": {
+    "train": {
+      "0": 612,
+      "1": 11486
+    },
+    "val": {
+      "0": 76,
+      "1": 1458
+    },
+    "test": {
+      "0": 78,
+      "1": 1526
+    }
+  },
+  "processed_benchmark_counts": {
+    "train": 11355,
+    "val": 1412,
+    "test": 1494
+  },
+  "processed_benchmark_class_counts": {
+    "train": {
+      "0": 604,
+      "1": 10751
+    },
+    "val": {
+      "0": 75,
+      "1": 1337
+    },
+    "test": {
+      "0": 78,
+      "1": 1416
+    }
+  },
+  "raw_paths_not_in_processed_manifest": {
+    "train": 743,
+    "val": 122,
+    "test": 110
+  },
+  "source_sha256": {
+    "all_real_video.json": "be3ebf572c00ce4a751804ca2c6d926dc7fb128a84c978c7bcf212bb4ad98924",
+    "all_fake_video.json": "e8ae23b0e75d500e1b0cad8f107b3112626ab03400518dbde26d41820eab8b86",
+    "PolyGlotFake.json": "b3ef8a8d5e5b25ba1c724868cca880a35464bc1cd66e081e6d40df6a5d972819"
+  },
+  "legacy_preprocessor_sha256": "b0c2bee9c9e83d245ae47e445202e752e23dd29ea7b12011080ce107ecfc0b84",
+  "verification": {
+    "legacy_metadata_replays": 10,
+    "all_replays_identical": true,
+    "processed_records_checked": 14261,
+    "split_assignment_conflicts": 0,
+    "cross_split_path_overlap": 0,
+    "processed_order_matches_filtered_raw_order": true,
+    "source_real_and_fake_never_cross_splits": true
+  },
+  "note": "The fixed lists cover the deduplicated raw inputs. The experiment manifest contains only retained preprocessed clips; 975 listed raw paths are absent from that manifest. Do not equate raw and retained counts."
+}

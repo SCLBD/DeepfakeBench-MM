@@ -1,0 +1,5 @@
+# Edit these roots for your filesystem; run entrypoints from the repository root.
+original_dir: ./data/original
+preprocessed_dir: ./data/preprocessed
+json_dir: ./data/json
+log_dir: ./logs

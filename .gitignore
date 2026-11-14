@@ -1,0 +1,24 @@
+# IDEs and Python caches
+.idea/
+.vscode/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ipynb_checkpoints/
+
+# Local data, experiment outputs, and temporary files
+/data/
+.tmp/
+temp*/
+tmp*/
+logs/
+*.bkp
+**/outputs/**
+
+# Model weights and downloaded alignment resources
+*.pth
+*.pyth
+*.pt
+/preprocess/dlib_tools/*.dat
+/preprocess/dlib_tools/*.dat.bz2
+/preprocess/dlib_tools/*.npy

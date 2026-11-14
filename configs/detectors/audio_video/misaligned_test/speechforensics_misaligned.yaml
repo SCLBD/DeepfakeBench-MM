@@ -1,0 +1,21 @@
+model_name: SpeechForensics
+model_config:
+  offset_window: 15
+  mouth_crop_size: 96
+  image_crop_size: 88
+data_type: audio_video_misaligned_real
+data_config:
+  frame_size: 256
+  color_mode: Gray
+  frame_mean: 0.421
+  frame_std: 0.165
+  with_landmark: true
+  num_frames: 25
+  stride: 1
+  spectrogram_type: Log-Mel
+  spectrogram_backend: python_speech_features
+  misalignment:
+    modality: audio
+    shift: 1
+num_workers: 8
+val_batch_size: 32

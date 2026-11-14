@@ -1,0 +1,36 @@
+model_name: AVH
+model_config:
+  pretrained: pretrained/avhubert/self_large_vox_433h.pt
+  losses:
+    - name: CE
+      func: cross_entropy
+      params:
+        real_num: 602
+        fake_num: 10751
+
+data_type: audio_video
+data_config:
+  frame_size: 256
+  color_mode: Gray
+  frame_mean: 0.421
+  frame_std: 0.165
+  num_frames: 25
+  stride: 1
+  spectrogram_type: Log-Mel
+  spectrogram_backend: python_speech_features
+num_workers: 8
+
+train_type: basic
+aug_config: default
+train_datasets: [PolyGlotFake]
+train_batch_size: 64
+val_datasets: [FakeAVCeleb, LAV-DF, PolyGlotFake, IDForge, Mega-MMDF]
+val_batch_size: 64
+metric_scoring: sample-level AUC
+val_every_epoch: 5
+optimizer:
+  type: Adam
+  params:
+    lr: 0.001
+scheduler: null
+num_epochs: 100

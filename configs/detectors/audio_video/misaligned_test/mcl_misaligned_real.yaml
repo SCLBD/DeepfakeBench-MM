@@ -1,0 +1,47 @@
+# Test only; copy of the vanilla Mega-MMDF model and preprocessing settings.
+# Real-only, within-clip audio window rotation. shift: 0 gives aligned baseline.
+model_name: MCL
+model_config:
+  audio_ckpt: pretrained/Cnn14_mAP=0.431.pth
+  stage1_ckpt: pretrained/MCL/MCL_pretrained_on_Mega-MMDF.pth
+  losses:
+  - name: L_nce
+    func: mcl_nce
+  - name: L_jsd
+    func: mcl_jsd
+  - name: L_av
+    func: cross_entropy
+    params:
+      real_num: 59644
+      fake_num: 703936
+  - name: L_v
+    func: cross_entropy
+    weight: 2
+    params:
+      real_num: 107997
+      fake_num: 655583
+  - name: L_a
+    func: cross_entropy
+    weight: 1
+    params:
+      real_num: 231641
+      fake_num: 531939
+data_config:
+  frame_size: 224
+  frame_mean:
+  - 0.485
+  - 0.456
+  - 0.406
+  frame_std:
+  - 0.229
+  - 0.224
+  - 0.225
+  num_frames: 30
+  stride: 1
+  audio_sampling_rate: 32000
+  misalignment:
+    modality: audio
+    shift: 1
+num_workers: 8
+val_batch_size: 32
+data_type: audio_video_misaligned_real

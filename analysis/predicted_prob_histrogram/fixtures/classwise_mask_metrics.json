@@ -1,0 +1,289 @@
+[
+  {
+    "model": "Baseline",
+    "conditions": [
+      {
+        "condition": "mask_audio",
+        "group": "RARV",
+        "delta_error_rate": 0.3507766551048107,
+        "delta_mse": 0.2775321215095346
+      },
+      {
+        "condition": "mask_audio",
+        "group": "RAFV",
+        "delta_error_rate": -0.025279734769995853,
+        "delta_mse": -0.0160086225291019
+      },
+      {
+        "condition": "mask_audio",
+        "group": "FAFV",
+        "delta_error_rate": -0.002877597743457418,
+        "delta_mse": -0.0015966150065176903
+      },
+      {
+        "condition": "mask_video",
+        "group": "RARV",
+        "delta_error_rate": 0.14985170663047304,
+        "delta_mse": 0.09530328478580342
+      },
+      {
+        "condition": "mask_video",
+        "group": "FARV",
+        "delta_error_rate": 0.11794298490776972,
+        "delta_mse": 0.0926531356509045
+      },
+      {
+        "condition": "mask_video",
+        "group": "FAFV",
+        "delta_error_rate": 0.35044713441859876,
+        "delta_mse": 0.2804310597391706
+      }
+    ]
+  },
+  {
+    "model": "AVFF",
+    "conditions": [
+      {
+        "condition": "mask_audio",
+        "group": "RARV",
+        "delta_error_rate": 0.9571318609745989,
+        "delta_mse": 0.953112426872196
+      },
+      {
+        "condition": "mask_audio",
+        "group": "RAFV",
+        "delta_error_rate": -0.1386624140336888,
+        "delta_mse": -0.0919445780156186
+      },
+      {
+        "condition": "mask_audio",
+        "group": "FAFV",
+        "delta_error_rate": -0.02402370990237099,
+        "delta_mse": -0.016789903019083154
+      },
+      {
+        "condition": "mask_video",
+        "group": "RARV",
+        "delta_error_rate": 0.8424418260406182,
+        "delta_mse": 0.3338235473666232
+      },
+      {
+        "condition": "mask_video",
+        "group": "FARV",
+        "delta_error_rate": -0.1981995612376125,
+        "delta_mse": -0.11121425246571102
+      },
+      {
+        "condition": "mask_video",
+        "group": "FAFV",
+        "delta_error_rate": -0.008873779637377965,
+        "delta_mse": 0.011904860415497518
+      }
+    ]
+  },
+  {
+    "model": "AVH",
+    "conditions": [
+      {
+        "condition": "mask_audio",
+        "group": "RARV",
+        "delta_error_rate": 0.10822902528527623,
+        "delta_mse": 0.06331696265063563
+      },
+      {
+        "condition": "mask_audio",
+        "group": "RAFV",
+        "delta_error_rate": -0.005540529464797966,
+        "delta_mse": -0.0028549529399335624
+      },
+      {
+        "condition": "mask_audio",
+        "group": "FAFV",
+        "delta_error_rate": 0.013605355759092467,
+        "delta_mse": 0.011962549286018271
+      },
+      {
+        "condition": "mask_video",
+        "group": "RARV",
+        "delta_error_rate": 0.17910822902528525,
+        "delta_mse": 0.1113602463826586
+      },
+      {
+        "condition": "mask_video",
+        "group": "FARV",
+        "delta_error_rate": -0.05217067262902925,
+        "delta_mse": -0.0800750717383778
+      },
+      {
+        "condition": "mask_video",
+        "group": "FAFV",
+        "delta_error_rate": 0.3252709002909082,
+        "delta_mse": 0.19195105893827225
+      }
+    ]
+  },
+  {
+    "model": "FGMDF",
+    "conditions": [
+      {
+        "condition": "mask_audio",
+        "group": "RARV",
+        "delta_error_rate": 0.2314245499666642,
+        "delta_mse": 0.13979898933524443
+      },
+      {
+        "condition": "mask_audio",
+        "group": "RAFV",
+        "delta_error_rate": -0.13664661260789956,
+        "delta_mse": -0.09325558439952833
+      },
+      {
+        "condition": "mask_audio",
+        "group": "FAFV",
+        "delta_error_rate": 0.017702994335041813,
+        "delta_mse": 0.01584818321763169
+      },
+      {
+        "condition": "mask_video",
+        "group": "RARV",
+        "delta_error_rate": -0.012371286761982368,
+        "delta_mse": -0.0062706561663588845
+      },
+      {
+        "condition": "mask_video",
+        "group": "FARV",
+        "delta_error_rate": -0.00297914597815293,
+        "delta_mse": -0.0017628083785313194
+      },
+      {
+        "condition": "mask_video",
+        "group": "FAFV",
+        "delta_error_rate": 0.09927164823307257,
+        "delta_mse": 0.07131561489072133
+      }
+    ]
+  },
+  {
+    "model": "FRADE",
+    "conditions": [
+      {
+        "condition": "mask_audio",
+        "group": "RARV",
+        "delta_error_rate": 0.9395767355351129,
+        "delta_mse": 0.9378831269765248
+      },
+      {
+        "condition": "mask_audio",
+        "group": "RAFV",
+        "delta_error_rate": -0.01001243265644426,
+        "delta_mse": -0.006709722633347748
+      },
+      {
+        "condition": "mask_audio",
+        "group": "FAFV",
+        "delta_error_rate": -0.0026435952895938475,
+        "delta_mse": -0.0019484301963542375
+      },
+      {
+        "condition": "mask_video",
+        "group": "RARV",
+        "delta_error_rate": -0.05333534409088624,
+        "delta_mse": -0.04268337548290486
+      },
+      {
+        "condition": "mask_video",
+        "group": "FARV",
+        "delta_error_rate": 0.14570523569964597,
+        "delta_mse": 0.13488107162089225
+      },
+      {
+        "condition": "mask_video",
+        "group": "FAFV",
+        "delta_error_rate": 0.5199471280942081,
+        "delta_mse": 0.4180187649538088
+      }
+    ]
+  },
+  {
+    "model": "FauForensics",
+    "conditions": [
+      {
+        "condition": "mask_audio",
+        "group": "RARV",
+        "delta_error_rate": 0.012416427889207257,
+        "delta_mse": 0.002418744257013883
+      },
+      {
+        "condition": "mask_audio",
+        "group": "RAFV",
+        "delta_error_rate": -0.011917055979018116,
+        "delta_mse": -0.007847175147169552
+      },
+      {
+        "condition": "mask_audio",
+        "group": "FAFV",
+        "delta_error_rate": -0.0004509711759549777,
+        "delta_mse": -0.0006270620942838336
+      },
+      {
+        "condition": "mask_video",
+        "group": "RARV",
+        "delta_error_rate": -0.03312723068416026,
+        "delta_mse": -0.024362230673139463
+      },
+      {
+        "condition": "mask_video",
+        "group": "FARV",
+        "delta_error_rate": 0.35544376125706484,
+        "delta_mse": 0.297141188446891
+      },
+      {
+        "condition": "mask_video",
+        "group": "FAFV",
+        "delta_error_rate": 0.8627523215488001,
+        "delta_mse": 0.6124472696115126
+      }
+    ]
+  },
+  {
+    "model": "MCL",
+    "conditions": [
+      {
+        "condition": "mask_audio",
+        "group": "RARV",
+        "delta_error_rate": 0.8991190536118802,
+        "delta_mse": 0.7008896990405145
+      },
+      {
+        "condition": "mask_audio",
+        "group": "RAFV",
+        "delta_error_rate": -0.2670717404052909,
+        "delta_mse": -0.16538830519945144
+      },
+      {
+        "condition": "mask_audio",
+        "group": "FAFV",
+        "delta_error_rate": -0.002264404849708215,
+        "delta_mse": 0.00039584049209686993
+      },
+      {
+        "condition": "mask_video",
+        "group": "RARV",
+        "delta_error_rate": -0.013843443241882719,
+        "delta_mse": 0.00569934463653779
+      },
+      {
+        "condition": "mask_video",
+        "group": "FARV",
+        "delta_error_rate": 0.0005598407564070666,
+        "delta_mse": 0.004202088908288136
+      },
+      {
+        "condition": "mask_video",
+        "group": "FAFV",
+        "delta_error_rate": 0.013405276710272637,
+        "delta_mse": 0.015309559414849612
+      }
+    ]
+  }
+]

@@ -1,0 +1,34 @@
+"""Planned audio dataset implementation."""
+
+import os
+import sys
+
+project_root = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+if project_root not in sys.path:
+    sys.path.insert(0, project_root)
+
+from datasets.abstract_dataset import AbstractDataset
+
+
+class AudioDataset(AbstractDataset):
+    dataset_type = 'audio'
+
+    # Todo: Implement modality-specific sampling, reading and returned fields.
+
+    def __getitem__(self, index):
+        """
+        Read one audio sample once this modality is implemented.
+        Args:
+            index (int): Sample index.
+        Returns:
+            sample: Not implemented yet.
+        """
+        raise NotImplementedError('AudioDataset has not been implemented.')
+
+    def __len__(self):
+        """
+        Return the number of indexed samples once this modality is implemented.
+        Returns:
+            num_samples (int): Not implemented yet.
+        """
+        raise NotImplementedError('AudioDataset has not been implemented.')

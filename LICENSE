@@ -10,10 +10,9 @@ whose unmodified text follows below.
 This project is developed by iDES at CUHK(SZ), led by Professor Baoyuan Wu.
 
 Third-party components retain their respective copyright notices and licenses
-and are not relicensed by this file. Recorded component sources are listed in
-THIRD_PARTY_SOURCES.md. This license does not grant rights to datasets or model
-weights distributed separately; consult their respective repositories and
-the terms of their original providers.
+and are not relicensed by this file. This license does not grant rights to
+datasets or model weights distributed separately; consult their respective
+repositories and the terms of their original providers.
 
 Official license: https://creativecommons.org/licenses/by-nc/4.0/
 SPDX-License-Identifier: CC-BY-NC-4.0

@@ -1,0 +1,47 @@
+# Model Settings
+model_name: FGMDF
+model_config:
+  losses:
+    - name: audio_modality_CE
+      func: cross_entropy
+      params:
+        real_num: 59644
+        fake_num: 41264
+    - name: video_modality_CE
+      func: cross_entropy
+      params:
+        real_num: 59644
+        fake_num: 41264
+    - name: cross_modality_CE
+      func: cross_entropy
+      params:
+        real_num: 59644
+        fake_num: 41264
+
+# Data Settings
+data_type: audio_video
+data_config:
+  frame_size: 128
+  num_frames: 100
+  stride: 1
+num_workers: 8
+
+train_type: basic
+aug_config: default
+train_datasets: [Mega-MMDF-pipeline1]
+train_batch_size: 32
+val_datasets: [Mega-MMDF-pipeline1]
+val_batch_size: 32
+metric_scoring: sample-level AUC
+val_per_epoch: 2
+optimizer:
+  type: Adam
+  params:
+    lr: 0.001
+scheduler:
+  type: step
+  interval: epoch
+  params:
+    step_size: 8
+    gamma: 0.5
+num_epochs: 10

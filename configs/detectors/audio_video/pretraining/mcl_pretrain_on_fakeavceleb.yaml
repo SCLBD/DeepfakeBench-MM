@@ -1,0 +1,34 @@
+# Model Settings
+model_name: MCL-Pretrain
+model_config:
+  losses:
+    - name: CE
+      func: cross_entropy
+      weight: 1
+      params:
+        real_num: 600
+        fake_num: 12297
+
+# Data Settings
+data_type: audio_video
+data_config:
+  frame_size: 224
+  frame_mean: [ 0.485, 0.456, 0.406 ]
+  frame_std: [ 0.229, 0.224, 0.225 ]
+  num_frames: 30
+  stride: 1
+  audio_sampling_rate: 32000
+num_workers: 8
+
+# Trainer Settings
+train_type: basic
+aug_config: default
+train_datasets: [FakeAVCeleb]
+train_batch_size: 64
+optimizer:
+  type: Adam
+  params:
+    lr: 0.0005
+    weight_decay: 0.0005
+scheduler: null
+num_epochs: 50

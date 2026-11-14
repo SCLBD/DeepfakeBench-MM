@@ -1,0 +1,30 @@
+# Test only; copy of the vanilla Mega-MMDF model and preprocessing settings.
+# Real-only, within-clip audio window rotation. shift: 0 gives aligned baseline.
+model_name: FGMDF
+model_config:
+  losses:
+  - name: audio_modality_CE
+    func: cross_entropy
+    params:
+      real_num: 231641
+      fake_num: 531939
+  - name: video_modality_CE
+    func: cross_entropy
+    params:
+      real_num: 107997
+      fake_num: 655583
+  - name: cross_modality_CE
+    func: cross_entropy
+    params:
+      real_num: 59644
+      fake_num: 703936
+data_config:
+  frame_size: 128
+  num_frames: 100
+  stride: 1
+  misalignment:
+    modality: audio
+    shift: 1
+num_workers: 8
+val_batch_size: 32
+data_type: audio_video_misaligned_real

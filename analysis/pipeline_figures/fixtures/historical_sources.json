@@ -1,0 +1,308 @@
+{
+  "source_csv": {
+    "path": "D:\\codes\\DeepfakeBench-MM\\temp_pipeline_bar_chart\\mega_mmdf_pipeline_video_auc.csv",
+    "bytes": 78972,
+    "sha256": "6afa7a14ec88803e19fc9479872a0cdda1d920105b1133c9db7e57b9d8dacdfc"
+  },
+  "retained_v1_source": {
+    "path": "D:\\codes\\DeepfakeBench-MM\\temp_pipeline_bar_chart\\versions\\v1\\mega_mmdf_pipeline_video_auc.csv",
+    "bytes": 78972,
+    "sha256": "6afa7a14ec88803e19fc9479872a0cdda1d920105b1133c9db7e57b9d8dacdfc"
+  },
+  "body_v8_source": {
+    "path": "D:\\codes\\DeepfakeBench-MM\\temp_pipeline_bar_chart\\drafts\\paper_pipeline_v8\\mega_mmdf_pipeline_video_auc.csv",
+    "bytes": 78972,
+    "sha256": "6afa7a14ec88803e19fc9479872a0cdda1d920105b1133c9db7e57b9d8dacdfc"
+  },
+  "audit_cache": {
+    "path": "D:\\codes\\DeepfakeBench-MM\\outputs\\manuscript_audit_20261014\\remote_sources.json",
+    "bytes": 9249252,
+    "sha256": "2e78950803d9348d7219a73f9cfeb0d7f85e830b927d8db60373a842faffea66"
+  },
+  "remote_log_sources": [
+    {
+      "model": "Baseline",
+      "training_dataset": "FakeAVCeleb",
+      "path": "/mnt/aoss/DeepfakeBench-MM/logs/test/Baseline_train_on_FakeAVCeleb/log.txt",
+      "log_sha256": "1e938eb3c1e0224392179668ebc30b26ad0c5218aed6bdea0f50793a05bf80b5",
+      "table_heading_line": 872,
+      "time": "2026-09-03 16:22:47"
+    },
+    {
+      "model": "Baseline",
+      "training_dataset": "LAV-DF",
+      "path": "/mnt/aoss/DeepfakeBench-MM/logs/test/Baseline_train_on_LAV-DF/log.txt",
+      "log_sha256": "bc10e8b3986df8103bedcf8d5a97337f288099ebb32f3784486601559d1c3615",
+      "table_heading_line": 1146,
+      "time": "2026-09-03 16:25:13"
+    },
+    {
+      "model": "Baseline",
+      "training_dataset": "PolyGlotFake",
+      "path": "/mnt/aoss/DeepfakeBench-MM/logs/test/Baseline_train_on_PolyGlotFake/log.txt",
+      "log_sha256": "36d174af89a1800adecf0e222ca0647c7f91a54beffecda366cfb85895e98a3d",
+      "table_heading_line": 774,
+      "time": "2026-09-03 16:27:26"
+    },
+    {
+      "model": "Baseline",
+      "training_dataset": "IDForge",
+      "path": "/mnt/aoss/DeepfakeBench-MM/logs/test/Baseline_train_on_IDForge/log.txt",
+      "log_sha256": "a847160d798f123a7a927e711a673719eedde4c5d27881e7eabd05f24b8cf694",
+      "table_heading_line": 1326,
+      "time": "2026-09-03 16:29:39"
+    },
+    {
+      "model": "Baseline",
+      "training_dataset": "Mega-MMDF",
+      "path": "/mnt/aoss/DeepfakeBench-MM/logs/test/Baseline_train_on_Mega-MMDF/log.txt",
+      "log_sha256": "5f03914b84a4718bb0ea41609eb57693802703dda3423df6ff36da326a26c157",
+      "table_heading_line": 1137,
+      "time": "2026-09-03 16:32:01"
+    },
+    {
+      "model": "AVFF",
+      "training_dataset": "FakeAVCeleb",
+      "path": "/mnt/aoss/DeepfakeBench-MM/logs/test/AVFF_train_on_FakeAVCeleb/log.txt",
+      "log_sha256": "6db01a38d3a1037153a1fed908d9de1f08055a2550fddef2446cb613beb0452d",
+      "table_heading_line": 843,
+      "time": "2026-09-03 16:03:45"
+    },
+    {
+      "model": "AVFF",
+      "training_dataset": "LAV-DF",
+      "path": "/mnt/aoss/DeepfakeBench-MM/logs/test/AVFF_train_on_LAV-DF/log.txt",
+      "log_sha256": "61c7c48c73a8b282ea2911db6095964e71283dd42872d49aea23d6910d057e38",
+      "table_heading_line": 943,
+      "time": "2026-09-03 16:05:02"
+    },
+    {
+      "model": "AVFF",
+      "training_dataset": "PolyGlotFake",
+      "path": "/mnt/aoss/DeepfakeBench-MM/logs/test/AVFF_train_on_PolyGlotFake/log.txt",
+      "log_sha256": "b615a332bc903f06fd84e2e81db5074598be1dd1fdf00bcea205d0e2b7bc017f",
+      "table_heading_line": 943,
+      "time": "2026-09-03 16:06:18"
+    },
+    {
+      "model": "AVFF",
+      "training_dataset": "IDForge",
+      "path": "/mnt/aoss/DeepfakeBench-MM/logs/test/AVFF_train_on_IDForge/log.txt",
+      "log_sha256": "d6a50cff3380a6a2fd3569e2c421a25a2189b7919becaace6c3441ba84fe1a97",
+      "table_heading_line": 943,
+      "time": "2026-09-03 16:07:34"
+    },
+    {
+      "model": "AVFF",
+      "training_dataset": "Mega-MMDF",
+      "path": "/mnt/aoss/DeepfakeBench-MM/logs/test/AVFF_train_on_Mega-MMDF/log.txt",
+      "log_sha256": "f8f03da2cf811c272f0ebe6bcd1f98ce79373256fe1c74d5e3af70e8de23b84d",
+      "table_heading_line": 1353,
+      "time": "2026-09-03 16:08:50"
+    },
+    {
+      "model": "AVH",
+      "training_dataset": "FakeAVCeleb",
+      "path": "/mnt/aoss/DeepfakeBench-MM/logs/test/AVH_train_on_FakeAVCeleb/log.txt",
+      "log_sha256": "2c2ae59d96208662cd558fc513d32a87225ae7ae437db5da2d626e40dd48ccf3",
+      "table_heading_line": 811,
+      "time": "2026-09-03 16:11:12"
+    },
+    {
+      "model": "AVH",
+      "training_dataset": "LAV-DF",
+      "path": "/mnt/aoss/DeepfakeBench-MM/logs/test/AVH_train_on_LAV-DF/log.txt",
+      "log_sha256": "7715d5804f683fa57b14d7429415e50b98acac6f82b88c8f09916411942223c0",
+      "table_heading_line": 1053,
+      "time": "2026-09-03 16:13:34"
+    },
+    {
+      "model": "AVH",
+      "training_dataset": "PolyGlotFake",
+      "path": "/mnt/aoss/DeepfakeBench-MM/logs/test/AVH_train_on_PolyGlotFake/log.txt",
+      "log_sha256": "a7c3fc317ca47d6847330f52b5e2d33f7e1c6a46288207122fee9867f89b7747",
+      "table_heading_line": 738,
+      "time": "2026-09-03 16:15:50"
+    },
+    {
+      "model": "AVH",
+      "training_dataset": "IDForge",
+      "path": "/mnt/aoss/DeepfakeBench-MM/logs/test/AVH_train_on_IDForge/log.txt",
+      "log_sha256": "073fc866c40791a9f894d5f9de844c5dd2256a42c7dcb3a797b9265d63e77d20",
+      "table_heading_line": 1685,
+      "time": "2026-09-03 16:18:08"
+    },
+    {
+      "model": "AVH",
+      "training_dataset": "Mega-MMDF",
+      "path": "/mnt/aoss/DeepfakeBench-MM/logs/test/AVH_train_on_Mega-MMDF/log.txt",
+      "log_sha256": "51bba5618d1c23614d9a9815ad3568af9778ac4212cd3d11b09cf674a9f9c17d",
+      "table_heading_line": 1152,
+      "time": "2026-09-03 16:20:29"
+    },
+    {
+      "model": "FauForensics",
+      "training_dataset": "FakeAVCeleb",
+      "path": "/mnt/aoss/DeepfakeBench-MM/logs/test/FauForensics_train_on_FakeAVCeleb/log.txt",
+      "log_sha256": "7fc1bed16d378d2914476debcbb13cb7f32ffe196fc0d6e21509c744d7fd4da9",
+      "table_heading_line": 1026,
+      "time": "2026-09-03 16:33:48"
+    },
+    {
+      "model": "FauForensics",
+      "training_dataset": "LAV-DF",
+      "path": "/mnt/aoss/DeepfakeBench-MM/logs/test/FauForensics_train_on_LAV-DF/log.txt",
+      "log_sha256": "338facb5b6de0e516fd2d60b24e94fe1546c7acc8510bab4ba52affcd17de32c",
+      "table_heading_line": 889,
+      "time": "2026-09-03 16:35:35"
+    },
+    {
+      "model": "FauForensics",
+      "training_dataset": "PolyGlotFake",
+      "path": "/mnt/aoss/DeepfakeBench-MM/logs/test/FauForensics_train_on_PolyGlotFake/log.txt",
+      "log_sha256": "7746d0aac808146a39229f99bc85c2091e469e943c16969a49a58edf698b1ed3",
+      "table_heading_line": 889,
+      "time": "2026-09-03 16:37:17"
+    },
+    {
+      "model": "FauForensics",
+      "training_dataset": "IDForge",
+      "path": "/mnt/aoss/DeepfakeBench-MM/logs/test/FauForensics_train_on_IDForge/log.txt",
+      "log_sha256": "99a00838e650dd3a6753ae9d2b03f61fcb3cf5b1f432200e02466ba827f15ef4",
+      "table_heading_line": 889,
+      "time": "2026-09-03 16:39:00"
+    },
+    {
+      "model": "FauForensics",
+      "training_dataset": "Mega-MMDF",
+      "path": "/mnt/aoss/DeepfakeBench-MM/logs/test/FauForensics_train_on_Mega-MMDF/log.txt",
+      "log_sha256": "e117461cae61b98504da4184295349f5bb0c406eb9fb1abfa5d6365238908480",
+      "table_heading_line": 1031,
+      "time": "2026-09-03 16:40:42"
+    },
+    {
+      "model": "FGMDF",
+      "training_dataset": "FakeAVCeleb",
+      "path": "/mnt/aoss/DeepfakeBench-MM/logs/test/FGMDF_train_on_FakeAVCeleb/log.txt",
+      "log_sha256": "d7faf4c55b8706dd5407f40ca5f5bf470c3fff93b123a67013e9d50c73002153",
+      "table_heading_line": 802,
+      "time": "2026-09-03 16:41:29"
+    },
+    {
+      "model": "FGMDF",
+      "training_dataset": "LAV-DF",
+      "path": "/mnt/aoss/DeepfakeBench-MM/logs/test/FGMDF_train_on_LAV-DF/log.txt",
+      "log_sha256": "71fa86fbdf590343c758035bc11d006f17e7edc32a7cb02bba0afbbe74c8a1fe",
+      "table_heading_line": 1160,
+      "time": "2026-09-03 16:42:19"
+    },
+    {
+      "model": "FGMDF",
+      "training_dataset": "PolyGlotFake",
+      "path": "/mnt/aoss/DeepfakeBench-MM/logs/test/FGMDF_train_on_PolyGlotFake/log.txt",
+      "log_sha256": "a8b8dc49384d04f727156f933e48722e4ad368b16dcd901177a4f19781b6848e",
+      "table_heading_line": 802,
+      "time": "2026-09-03 16:43:12"
+    },
+    {
+      "model": "FGMDF",
+      "training_dataset": "IDForge",
+      "path": "/mnt/aoss/DeepfakeBench-MM/logs/test/FGMDF_train_on_IDForge/log.txt",
+      "log_sha256": "6e4ed9d4855617e49879ae4edff587c348ff9089fae909b358c2e64d6125e16b",
+      "table_heading_line": 1224,
+      "time": "2026-09-03 16:44:10"
+    },
+    {
+      "model": "FGMDF",
+      "training_dataset": "Mega-MMDF",
+      "path": "/mnt/aoss/DeepfakeBench-MM/logs/test/FGMDF_train_on_Mega-MMDF/log.txt",
+      "log_sha256": "03327d83c1df8b10152a55a42d20b68cc9622ff0e19afa3a87fc2a1732209bfc",
+      "table_heading_line": 802,
+      "time": "2026-09-03 16:45:01"
+    },
+    {
+      "model": "FRADE",
+      "training_dataset": "FakeAVCeleb",
+      "path": "/mnt/aoss/DeepfakeBench-MM/logs/test/FRADE_train_on_FakeAVCeleb/log.txt",
+      "log_sha256": "50bfd0bcc0134d6df1562184fea05f32f206f8e6587fe6350d3fddf0471dd0f2",
+      "table_heading_line": 1567,
+      "time": "2026-09-03 16:47:28"
+    },
+    {
+      "model": "FRADE",
+      "training_dataset": "LAV-DF",
+      "path": "/mnt/aoss/DeepfakeBench-MM/logs/test/FRADE_train_on_LAV-DF/log.txt",
+      "log_sha256": "825b468b6c7599796bdbb4dfe1279ed55578fadf2aa442a1c0d7da04e3cf2320",
+      "table_heading_line": 1197,
+      "time": "2026-09-03 16:49:57"
+    },
+    {
+      "model": "FRADE",
+      "training_dataset": "PolyGlotFake",
+      "path": "/mnt/aoss/DeepfakeBench-MM/logs/test/FRADE_train_on_PolyGlotFake/log.txt",
+      "log_sha256": "ca801598618306a908e9adc48d99bfc6c795da8c4261f951df80db3d466b3c71",
+      "table_heading_line": 1210,
+      "time": "2026-09-03 16:52:24"
+    },
+    {
+      "model": "FRADE",
+      "training_dataset": "IDForge",
+      "path": "/mnt/aoss/DeepfakeBench-MM/logs/test/FRADE_train_on_IDForge/log.txt",
+      "log_sha256": "8eb63fb599f2ad33822198e5c233fad49972e73fe8b3ee5bff30813eabcdfefa",
+      "table_heading_line": 1289,
+      "time": "2026-09-03 16:54:45"
+    },
+    {
+      "model": "FRADE",
+      "training_dataset": "Mega-MMDF",
+      "path": "/mnt/aoss/DeepfakeBench-MM/logs/test/FRADE_train_on_Mega-MMDF/log.txt",
+      "log_sha256": "c60c77316e54e8a0aa1cbd5f82e08c76879a29d544864ec033b31a5bb27129c8",
+      "table_heading_line": 1400,
+      "time": "2026-09-03 16:57:09"
+    },
+    {
+      "model": "MCL",
+      "training_dataset": "FakeAVCeleb",
+      "path": "/mnt/aoss/DeepfakeBench-MM/logs/test/MCL_train_on_FakeAVCeleb/log.txt",
+      "log_sha256": "657310bc0991d04349ec68fa81032f2ff82fe3691a8790d4bb3667b2d1e317b1",
+      "table_heading_line": 1418,
+      "time": "2026-09-03 16:58:57"
+    },
+    {
+      "model": "MCL",
+      "training_dataset": "LAV-DF",
+      "path": "/mnt/aoss/DeepfakeBench-MM/logs/test/MCL_train_on_LAV-DF/log.txt",
+      "log_sha256": "dec87c4cc1ef23bbdf40c2ec0286d89fdc05072b5e5ff62220326953c5b37b11",
+      "table_heading_line": 1418,
+      "time": "2026-09-03 17:00:45"
+    },
+    {
+      "model": "MCL",
+      "training_dataset": "PolyGlotFake",
+      "path": "/mnt/aoss/DeepfakeBench-MM/logs/test/MCL_train_on_PolyGlotFake/log.txt",
+      "log_sha256": "4f69b269ca5658e056ab643601a94cd9ca7a248b21dc509ff7fdbe313f50d683",
+      "table_heading_line": 1188,
+      "time": "2026-09-03 17:02:28"
+    },
+    {
+      "model": "MCL",
+      "training_dataset": "IDForge",
+      "path": "/mnt/aoss/DeepfakeBench-MM/logs/test/MCL_train_on_IDForge/log.txt",
+      "log_sha256": "2b1a78586907fdbd70e65ba04da20f31dabddcca23d7f8ecf7bef2826b691f1a",
+      "table_heading_line": 1268,
+      "time": "2026-09-03 17:04:11"
+    },
+    {
+      "model": "MCL",
+      "training_dataset": "Mega-MMDF",
+      "path": "/mnt/aoss/DeepfakeBench-MM/logs/test/MCL_train_on_Mega-MMDF/log.txt",
+      "log_sha256": "b9ddfaa1a671f07fda16cf42c69acb165005701f02de034c42936b71a75d886f",
+      "table_heading_line": 1612,
+      "time": "2026-09-03 17:05:55"
+    }
+  ],
+  "notes": [
+    "Historical provenance only: none of these old filesystem paths is required at runtime.",
+    "The packaged 770-cell JSON preserves the audited log path/hash/section for every value."
+  ]
+}

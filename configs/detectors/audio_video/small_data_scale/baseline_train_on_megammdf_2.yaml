@@ -1,0 +1,38 @@
+# Model Settings
+model_name: C3DResNet18+SEResNet+MLP
+model_config:
+  losses:
+    - name: CE
+      func: cross_entropy
+      params:
+        real_num: 59644
+        fake_num: 703936
+
+# Data Settings
+data_type: audio_video
+data_config:
+  frame_size: 224
+  frame_mean: [0.485, 0.456, 0.406]
+  frame_std: [0.229, 0.224, 0.225]
+  num_frames: 16
+  stride: 1
+  spectrogram_type: MFCC
+  spectrogram_backend: python_speech_features
+num_workers: 8
+
+# Trainer Settings
+train_type: basic
+aug_config: default
+train_datasets: [Mega-MMDF-2%]
+train_batch_size: 64
+val_datasets: [FakeAVCeleb, LAV-DF, PolyGlotFake, IDForge, Mega-MMDF-2%]
+val_batch_size: 64
+val_per_epoch: 1
+metric_scoring: sample-level AUC
+optimizer:
+  type: Adam
+  params:
+    lr: 0.001
+scheduler: null
+num_epochs: 10
+
