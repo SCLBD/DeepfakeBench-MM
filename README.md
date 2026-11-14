@@ -3,7 +3,7 @@
 # Mega-MMDF & DeepfakeBench-MM
 
 [![Hugging Face Dataset](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Dataset-FFD21E?style=flat-square)][dataset-hub]
-[![Hugging Face Models](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Models-FFD21E?style=flat-square)][model-hub]
+![Hugging Face Models](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Models-FFD21E?style=flat-square)
 [![Homepage](https://img.shields.io/badge/Homepage-Project%20page-2563EB?style=flat-square)][project-home]
 [![arXiv](https://img.shields.io/badge/arXiv-2510.22622-B31B1B?style=flat-square&logo=arxiv)][paper-arxiv]
 
@@ -12,10 +12,8 @@
 [![PyTorch](https://img.shields.io/badge/PyTorch-2.2-EE4C2C?style=flat-square&logo=pytorch&logoColor=white)](#installation)
 [![License: CC BY-NC 4.0](https://img.shields.io/badge/License-CC_BY--NC_4.0-64748B?style=flat-square)](LICENSE)
 
-<!-- TODO: Replace the model repository and homepage placeholders with their public URLs. -->
-[dataset-hub]: https://huggingface.co/datasets/iDES/Mega-MMDF
-[model-hub]: https://huggingface.co/iDES/DeepfakeBench-MM
-[project-home]: https://example.com/mega-mmdf
+[dataset-hub]: https://huggingface.co/datasets/SCLBD/Mega-MMDF
+[project-home]: https://sclbd.github.io/Mega-MMDF/
 [paper-arxiv]: https://arxiv.org/abs/2510.22622
 
 Kangran Zhao<sup>&#42;</sup>, Xiaoyu Zhang<sup>&#42;</sup>, Yupeng Chen<sup>&#42;</sup>,
